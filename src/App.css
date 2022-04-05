@@ -1,0 +1,43 @@
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.users {
+    text-align: center;
+    border: 3px solid goldenrod ;
+    height: fit-content;
+    background-color: #fff3c9;
+}
+
+.posts {
+    text-align: justify;
+    border: 3px solid darkred ;
+    background-color: #eac6c6;
+}
+
+.comments {
+    width: 100%;
+    border: 3px solid darkolivegreen;
+    background-color: #f4ffe6;
+}
+
+.borderRadius {
+    border-radius: 15px;
+}
+
+.boxSizing {
+    box-sizing: border-box;
+}
+
+.width49 {
+    width: 49%;
+}
+
+.padding1rem {
+    padding: 1rem;
+}
