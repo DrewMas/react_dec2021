@@ -7,15 +7,16 @@
 }
 
 .singleUser-btn {
-    background-color: transparent;
+    background-color: #ffdbdb;
     border: 1px solid ;
-    border-radius: 15px;
-    width: 10rem;
-    height: 30px;
+    border-radius: 25px;
+    width: 12rem;
+    height: 40px;
+    font-size: 1.3rem;
 }
 
 .singleUser-btn:hover {
     box-shadow: 3px 3px 3px 3px darkred;
-    font-size: 1.1rem;
-    background-color: gold;
+    font-size: 1.5rem;
+    background-color: khaki;
 }
