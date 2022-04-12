@@ -1,0 +1,12 @@
+.users {
+    box-sizing: border-box;
+    width: 49%;
+    border: 3px solid darkred ;
+    box-shadow: 3px 3px 5px 5px #b21c1c;
+    border-radius: 15px;
+    background-color: #f3b3b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}

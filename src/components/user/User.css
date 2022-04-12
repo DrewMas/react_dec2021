@@ -1,0 +1,21 @@
+.singleUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0 5rem;
+}
+
+.singleUser-btn {
+    background-color: transparent;
+    border: 1px solid ;
+    border-radius: 15px;
+    width: 10rem;
+    height: 30px;
+}
+
+.singleUser-btn:hover {
+    box-shadow: 3px 3px 3px 3px darkred;
+    font-size: 1.1rem;
+    background-color: gold;
+}

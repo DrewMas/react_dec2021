@@ -1,0 +1,44 @@
+.userDetails-box {
+    box-sizing: border-box;
+    width: 49.5%;
+    border: 3px solid olivedrab;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 5px olivedrab;
+    background-color: #d9f1bf;
+    display: flex;
+    padding: 3rem;
+}
+
+.userDetails {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.userDetails-btn {
+    width: 90%;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.userDetails-btn:hover {
+    box-shadow: 3px 3px 3px 3px olivedrab;
+    font-size: 1.8rem;
+    background-color: cornsilk;
+}
+
+p {
+    margin: 0;
+}

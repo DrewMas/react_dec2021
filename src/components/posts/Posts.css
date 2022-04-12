@@ -1,0 +1,8 @@
+.posts-box {
+    box-sizing: border-box;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 5px goldenrod;
+    background-color: #ffeec5;
+    padding: 1rem;
+}
