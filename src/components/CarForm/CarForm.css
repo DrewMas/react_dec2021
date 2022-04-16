@@ -1,0 +1,36 @@
+.carForm {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    border: 3px solid darkred;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: snow;
+    box-shadow: 1px 1px 3px 3px darkred;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.carForm-btn {
+    width: 5rem;
+    height: 2rem;
+    background-color: transparent;
+    border: transparent;
+    font-family: Georgia, serif;
+}
+
+.carForm-btn:hover {
+    font-size: 1.2rem;
+    color: darkred;
+}

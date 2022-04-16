@@ -1,0 +1,13 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.App {
+    box-sizing: border-box;
+    background-color: #fff6e9;
+    padding: 1rem;
+    border: 5px solid goldenrod;
+    border-radius: 25px;
+    font-family: Georgia, serif;
+}
