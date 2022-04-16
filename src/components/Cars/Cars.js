@@ -8,15 +8,18 @@ import {Car} from "../Car/Car";
 function Cars({newCar, setCarForUpdate}) {
 
     const [cars, setCars] = useState([]);
+    const [deletedCar, setDeletedCar] = useState(null);
+
     useEffect(() => {
         carService.getAll().then(({data}) => setCars(data));
-    }, [newCar]);
+    }, [newCar, deletedCar]);
 
 
     return (
         <div className={'allCars'}>
             {
-                cars.map(value => <Car key={value.id} car={value} setCarForUpdate={setCarForUpdate}/>)
+                cars.map(value => <Car key={value.id} car={value} setCarForUpdate={setCarForUpdate}
+                                       setDeletedCar={setDeletedCar}/>)
             }
         </div>
     );
