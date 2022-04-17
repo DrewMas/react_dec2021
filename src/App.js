@@ -10,9 +10,9 @@ function App() {
 
     return (
         <div className="App">
-            <CarForm setNewCar={setNewCar} carForUpdate={carForUpdate}/>
+            <CarForm setNewCar={setNewCar} carForUpdate={carForUpdate} setUpdatedCar={setUpdatedCar}/>
             <hr/>
-            <Cars newCar={newCar} setCarForUpdate={setCarForUpdate}/>
+            <Cars newCar={newCar} setCarForUpdate={setCarForUpdate} updatedCar={updatedCar} />
         </div>
     );
 }

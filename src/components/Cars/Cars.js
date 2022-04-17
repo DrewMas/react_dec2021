@@ -5,14 +5,14 @@ import {useEffect, useState} from "react";
 import {carService} from "../../services";
 import {Car} from "../Car/Car";
 
-function Cars({newCar, setCarForUpdate}) {
+function Cars({newCar, setCarForUpdate, updatedCar}) {
 
     const [cars, setCars] = useState([]);
     const [deletedCar, setDeletedCar] = useState(null);
 
     useEffect(() => {
         carService.getAll().then(({data}) => setCars(data));
-    }, [newCar, deletedCar]);
+    }, [newCar, deletedCar,updatedCar]);
 
 
     return (
