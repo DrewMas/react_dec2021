@@ -9,7 +9,7 @@ import {useEffect} from "react";
 
 function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
 
-    const {register, reset, handleSubmit, formState: {errors}, setValue} = useForm({
+    const {register, reset, handleSubmit, formState: {errors, isValid}, setValue} = useForm({
         resolver: joiResolver(carValidator),
         mode: "onTouched"
     });
@@ -53,7 +53,7 @@ function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
                 {errors.price && <span>{errors.price.message}</span>}
                 <label>Year: <input type="number" {...register('year', {valueAsNumber: true})}/></label>
                 {errors.year && <span>{errors.year.message}</span>}
-                <button className={'carForm-btn'}>{carForUpdate ? `Update` : `Create`}</button>
+                <button disabled={!isValid} className={'carForm-btn'}>{carForUpdate ? `Update` : `Create`}</button>
                 {
                     !!carForUpdate && <button onClick={clearForm} className={`carForm-btn`}>Clear</button>
                 }
