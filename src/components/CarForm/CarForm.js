@@ -39,6 +39,11 @@ function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
         }
     }
 
+    const clearForm = () => {
+        setCarForUpdate(false);
+        reset();
+    }
+
 
     return (
         <div className={'carForm'}>
@@ -49,7 +54,10 @@ function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
                 {errors.price && <span>{errors.price.message}</span>}
                 <label>Year: <input type="number" {...register('year', {valueAsNumber: true})}/></label>
                 {errors.year && <span>{errors.year.message}</span>}
-                <button className={'carForm-btn'}>Save</button>
+                <button className={'carForm-btn'}>{carForUpdate ? `Update` : `Create`}</button>
+                {
+                    !!carForUpdate && <button onClick={clearForm} className={`carForm-btn`}>Clear</button>
+                }
             </form>
         </div>
     );
