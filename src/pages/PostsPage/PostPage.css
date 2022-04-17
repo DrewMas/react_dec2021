@@ -1,0 +1,18 @@
+.postPage {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.allPosts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.singlePost {
+    width: 50%;
+}
+
+.w50 {
+    width: 50%;
+}
