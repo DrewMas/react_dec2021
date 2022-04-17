@@ -7,7 +7,7 @@ import {carService} from "../../services";
 import {carValidator} from "../../validation";
 import {useEffect} from "react";
 
-function CarForm({setNewCar, carForUpdate, setUpdatedCar}) {
+function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
 
     const {register, reset, handleSubmit, formState: {errors}, setValue} = useForm({
         resolver: joiResolver(carValidator),
@@ -21,13 +21,14 @@ function CarForm({setNewCar, carForUpdate, setUpdatedCar}) {
             setValue(`price`, price)
             setValue(`year`, year)
         }
-    }, [carForUpdate]);
+    }, [carForUpdate, setValue]);
 
     const submit = async (car) => {
         try {
             if (carForUpdate){
                 const {data} = await carService.updateById(carForUpdate.id, car);
                 setUpdatedCar(data);
+                setCarForUpdate(false);
             } else {
                 await carService.create(car);
                 setNewCar(car);
