@@ -33,8 +33,7 @@ function CarForm({setNewCar, carForUpdate, setUpdatedCar, setCarForUpdate}) {
                 await carService.create(car);
                 setNewCar(car);
             }
-            reset();
-        } catch (e) {
+            reset();       } catch (e) {
             console.log(e.response.data);
         }
     }
