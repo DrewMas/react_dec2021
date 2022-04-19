@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {postService} from "../../services";
 import {Outlet} from "react-router-dom";
 
-import {Post} from "../../components/Post/Post";
+import {Post} from "../../components";
 
 import './PostPage.css';
 
@@ -14,7 +14,7 @@ function PostsPage() {
     }, []);
 
     return (
-        <div className={'postPage '}>
+        <div className={'postPage'}>
             <div className={'w50 allPosts'}>
                 {posts.map(value => <Post key={value.id} post={value}/>)}
             </div>

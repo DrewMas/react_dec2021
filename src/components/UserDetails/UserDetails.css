@@ -1,0 +1,23 @@
+.userDetails-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.userDetails {
+    line-height: 1.5rem;
+}
+
+.userDetails-btn {
+    background-color: transparent;
+    width: 8rem;
+    height: 2rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.userDetails-btn:hover {
+    color: darkred;
+}

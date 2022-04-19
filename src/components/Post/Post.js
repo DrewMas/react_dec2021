@@ -8,7 +8,7 @@ function Post({post}) {
 
     return (
         <div className={'post'}>
-            <div><p>{id} - {title}</p></div>
+            <div>{id} - {title}</div>
             <div>
                 <Link to={`${id}`} state={post}>
                     <button className={'post-btn'}>Get Details</button>

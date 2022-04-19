@@ -1,20 +1,20 @@
 import {useLocation, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {postService} from "../../services";
-import {PostDetails} from "../../components/PostDetails/PostDetails";
+import {PostDetails} from "../../components";
 
 function SinglePostPage() {
 
     const {id} = useParams();
     const {state} = useLocation();
 
-    const [post, setPosts] = useState([state]);
+    const [post, setPost] = useState([state]);
 
     useEffect(() => {
         if (!state) {
-            postService.getById(id).then(({data}) => setPosts(data))
+            postService.getById(id).then(({data}) => setPost(data))
         } else {
-            setPosts(state);
+            setPost(state);
         }
     }, [id, state])
 
