@@ -8,7 +8,7 @@ function SinglePostPage() {
     const {id} = useParams();
     const {state} = useLocation();
 
-    const [post, setPost] = useState([state]);
+    const [post, setPost] = useState(state);
 
     useEffect(() => {
         if (!state) {

@@ -1,0 +1,18 @@
+.postDetails-btn {
+    background-color: transparent;
+    width: 8rem;
+    height: 2rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.postDetails-btn:hover {
+    color: darkred;
+}
+
+.postDetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}

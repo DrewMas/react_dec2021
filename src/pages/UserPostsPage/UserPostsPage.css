@@ -1,0 +1,10 @@
+.userPosts {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff8ef;
+    border: 3px solid goldenrod;
+}
